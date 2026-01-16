@@ -1,64 +1,105 @@
 import Image from "next/image";
+import Nav from "./components/nav";
+import Header from "./components/header";
+import Noidungkhoahoc from "./components/noidungkhoahoc";
+import Noidungkhoahoc2 from "./components/noidungkhoahoc2";
+import Noidungkhoahoc3 from "./components/noidungkhoahoc3";
+import Noidungkhoahoc4 from "./components/noidungkhoahoc4";
+import Seminar from "./components/seminar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className=" min-h-screen  bg-[#001C83] font-raleway dark:bg-black  pt-50">
+      <main className="">
+        <Nav />
+        <Header></Header>
+        {/* hero 1 */}
+        <div id="lichkhaigiang" className="scroll-mt-30 bg-[#157EFF] w-[1268px] mx-auto mt-8 p-6 flex gap-3">
+          <div className="flex flex-8 border border-[#FFF9C5]">
+            <div className="bg-[#FFF9C5] text-[#004AF7] font-bold">
+              <div className="border-b uppercase p-3 text-center">
+                Lớp <br />College Prep
+              </div>
+              <div className="text-[160px] text-center leading-[120px] pb-4">
+                1
+              </div>
+            </div>
+            <div className="text-[#FFF9C5] font-bold text-[16px] flex items-center justify-center mx-auto">
+              <div>
+                Khai giảng: 30/01/2026<br />
+                Lịch học (16 buổi + 3 seminar): Thứ 4 và Thứ 6 (17:30 - 19:30)<br />
+                Địa điểm: Tầng 4, số 4, ngõ 48 Nguyễn Chánh, phường Yên Hoà, Hà Nội
+              </div>
+            </div>
+          </div>
+
+          <div className="flex-4 border border-[#FFF9C5] p-3">
+            <div className="bg-[#FFF9C5] h-full px-12 py-8">
+              <div className="border border-[#FFC800] p-2 rounded-xl h-full">
+                <a href="#" className="block hover:scale-105 duration-300 bg-[#FFC800] h-full rounded-lg flex items-center justify-center font-black text-[36px] uppercase text-[#004AF7]">
+                  Đăng Ký Học
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+
+        {/* hero 2 */}
+        <div className="bg-[#FDFFD6] w-[1268px] mx-auto mt-8 p-4 flex gap-3 text-center justify-center items-center text-[#004AF7] font-medium text-[24px]">
+          <div>
+            Nếu bạn gặp lỗi trong quá trình đăng ký vui lòng
+          </div>
+          <a target="_blank" href="https://www.facebook.com/inceptionplatform" className="block capitalize bg-[#004AF7] text-[#FFC800] p-2 underline">
+            liên hệ Inception
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <div>
+            để được hỗ trợ!
+          </div>
+        </div>
+
+        {/* noi dung khoa hoc */}
+        <Noidungkhoahoc />
+
+        {/* Seminar 1 */}
+        <Seminar num="1" content={`<div><b>Academic Survival: Chúng mình là Asian,không phải Bsian và cách cày điểm A+</b> </div>
+          <div><b>"High School vs. College" Mindset Shift:</b> Đại học khác THPT ở điểm nào trong cách học và cách đánh giá?</div>
+          <div><b>The Art of Syllabus Management & Time Blocking: </b>Chọn môn đại pháp & Xếp lịch thần chưởng</div>
+          <div><b>Active Study Skills</b> - Kỹ năng học tập chủ động</div>
+          <div><b>Resource Utilization</b> - Cách tập dụng các nguồn lực (mà rất nhiều sinh viên bỏ quên) tại trường đại học</div>
+          <div><b>A Secret Sauce</b> - Bật mí bí kíp giúp bạn đỉnh ngang thần thánh trong mắt người Tây</div>`} />
+
+        <Noidungkhoahoc2 />
+
+        <Seminar num="2" content={`<div><b>AI Assistant: Hướng dẫn dùng AI một cách có trách nhiệm và không vi phạm đạo đức học thuật</b> </div>
+          <div><b>The Reality of AI:</b> Capabilities and Limitations - AI làm được gì và hạn chế ra sao</div>
+          <div><b>Academic Integrity 2.0: </b>The "Gray Area" and Plagiarism - Cách dùng AI để tránh bị coi là đạo văn</div>
+          <div><b>Prompt Engineering for Learning (Not Cheating) </b>Nghệ thuật viết câu lệnh AI và các công cụ AI đặc thùcho từng mục đích</div>`} />
+
+        {/* noi dung khoa hoc 3 */}
+        <Noidungkhoahoc3 />
+
+        <Seminar num="3" content={`<div><b>Academic & Career Orientation: Thạc sĩ, Tiến sĩ hay Đi làm và cách thức chuẩn bị cho mục tiêu</b> </div>
+          <div><b>The "Career Roadmap": </b>It's a Marathon, Not a Sprint - Chặng đường nghề nghiệp</div>
+          <div><b>Networking 101  </b> - Hòa nhập để tìm việc/học bổng</div>
+          <div><b>Skills vs. Major:</b> What Employers Actually Look For - Ngành học và công việc</div>
+          <div><b>Academic Roadmap</b> - Con đường học vấn và nghề nghiệp nghiên cứu</div>
+          <div><b>Research skills & Graduate preparation: </b>Các kỹ năng nghiên cứu và chuẩn bị cho cao học</div>`} />
+
+
+        {/* noi dung khoa hoc 4 */}
+        <Noidungkhoahoc4 />
+
+        {/*  */}
+        <div className="w-fit py-8  mx-auto font-black text-[24px]">
+          <a href="#" target="_blank" className="block hover:underline bg-[#E5FFA4] text-[#004AF7] px-20 py-3">
+            ĐĂNG KÝ HỌC
           </a>
         </div>
+
+        {/* footer */}
+
+        <Footer />
       </main>
     </div>
   );
