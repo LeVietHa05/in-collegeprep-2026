@@ -11,7 +11,7 @@ export default function Seminar({ num, content }: { num: string, content: string
                     <div className="text-[18px] pb-2">
                         <div className="flex flex-col gap-4" dangerouslySetInnerHTML={{ __html: content }}></div>
                     </div>
-                    <a target="_blank" href="#" className="block hover:underline font-black text-[20px] text-[#004AF7] bg-[#E5FFA4] w-fit px-12 py-4">
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeHGVx0m7WBQBXPxPLftIZZD-eHllCb7iBv9dAa3ZhtlFKz2A/viewform" className="block hover:underline font-black text-[20px] text-[#004AF7] bg-[#E5FFA4] w-fit px-12 py-4">
                         <span >ĐĂNG KÝ HỌC</span>
                     </a>
                 </div>

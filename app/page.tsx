@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex-4 border border-[#FFF9C5] p-3">
             <div className="bg-[#FFF9C5] h-full px-12 py-8">
               <div className="border border-[#FFC800] p-2 rounded-xl h-full">
-                <a href="#" className="block hover:scale-105 duration-300 bg-[#FFC800] h-full rounded-lg flex items-center justify-center font-black text-[36px] uppercase text-[#004AF7]">
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeHGVx0m7WBQBXPxPLftIZZD-eHllCb7iBv9dAa3ZhtlFKz2A/viewform" className="block hover:scale-105 duration-300 bg-[#FFC800] h-full rounded-lg flex items-center justify-center font-black text-[36px] uppercase text-[#004AF7]">
                   Đăng Ký Học
                 </a>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
 
         {/*  */}
         <div className="w-fit py-8  mx-auto font-black text-[24px]">
-          <a href="#" target="_blank" className="block hover:underline bg-[#E5FFA4] text-[#004AF7] px-20 py-3">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHGVx0m7WBQBXPxPLftIZZD-eHllCb7iBv9dAa3ZhtlFKz2A/viewform" target="_blank" className="block hover:underline bg-[#E5FFA4] text-[#004AF7] px-20 py-3">
             ĐĂNG KÝ HỌC
           </a>
         </div>
