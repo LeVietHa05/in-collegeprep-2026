@@ -29,30 +29,30 @@ const data = [
 
 export default function Noidungkhoahoc4() {
     return (
-        <div className="pt-16  w-[1268px] mx-auto">
+        <div className="pt-16  w-full max-w-[1268px] mx-auto">
             {/* main */}
             <div>
                 {
                     data.map((each, i) => {
                         return (
                             <div key={i}>
-                                <div className="bg-[#9CDDFF] text-[#004AF7] px-12 py-4 font-extrabold text-[36px] uppercase">
+                                <div className="bg-[#9CDDFF] text-[#004AF7] px-2 lg:px-12 lg:py-4 font-extrabold text-xl lg:text-[36px] text-center lg:text-left uppercase">
                                     {each.title}
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-[2px] py-[2px] bg-[#004AF7] text-[#004AF7] font-semibold">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2px] py-[2px] bg-[#004AF7] text-[#004AF7] font-semibold">
                                     {each.content.map((ec, idx) => {
                                         return (
                                             <div key={idx} className="bg-[#EAFDFF] ">
-                                                <div className="border-b-2 border-[#004AF7] flex px-6 py-2 items-end">
+                                                <div className="border-b-2 border-[#004AF7] flex px-6 py-2  items-center lg:items-end">
                                                     <div className=" text-[50px] font-bold leading-[50px]">
                                                         {ec.num}.
                                                     </div>
-                                                    <div className="uppercase pl-4 font-bold">
+                                                    <div className="uppercase pl-4 font-bold text-sm lg:text-base">
                                                         {ec.title}
                                                     </div>
                                                 </div>
-                                                <div className="px-12 py-8 text-justify space-y-4">
+                                                <div className="px-8 lg:px-12 py-8 text-justify space-y-4 text-xs">
                                                     <ol className="list-decimal">
                                                         {ec.content.map((ecc, id) => {
                                                             return (

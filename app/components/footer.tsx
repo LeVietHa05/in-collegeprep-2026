@@ -4,8 +4,8 @@ import Link from "next/link"
 
 export default function Footer() {
     return (
-        <div className="mt-20 bg-white w-full  relative z-2 ">
-            <div className="max-w-[1080px] mx-auto py-12 flex justify-between text-xs font-light">
+        <div className="lg:mt-20 bg-white w-full  relative z-2 ">
+            <div className="max-w-[1080px] mx-auto p-2 lg:p-0 lg:py-12 flex flex-col lg:flex-row items-center lg:items-start justify-between text-xs font-light ">
                 <div className="text-xs">
                     <div >
                         <Image src={'/logo-footer.svg'} alt="logo" width={190} height={62}></Image>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="space-y-4 *:hover:underline">
+                <div className="space-y-4 *:hover:underline hidden lg:block">
                     <div className="text-[15px] text-[#004AF7] font-bold">
                         <Link href={'#lichkhaigiang'}>LỊCH KHAI GIẢNG</Link>
                     </div>
@@ -33,7 +33,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="space-y-4 *:hover:underline">
+                <div className="space-y-4 *:hover:underline  hidden lg:block">
                     <div className="text-[15px] text-[#004AF7] font-bold">
                         <Link href={'#khoahoc'}>NỘI DUNG KHOÁ HỌC</Link>
                     </div>
@@ -41,7 +41,7 @@ export default function Footer() {
 
                 <div className="space-y-4 *:hover:underline">
                     <div className="text-sm text-[#032852] font-semibold">Theo dõi ngay tại</div>
-                    <div className="flex">
+                    <div className="flex justify-center">
                         <Link target="_blank" href={'https://www.facebook.com/inceptionplatform'}>
                             <Image className="h-6" src={'/icon-facebook.svg'} alt="" width={25} height={25}></Image>
                         </Link>

@@ -10,13 +10,13 @@ import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen  bg-[#001C83] font-raleway dark:bg-black  pt-50">
+    <div className=" min-h-screen  bg-[#001C83] font-raleway dark:bg-black pt-10 lg:pt-50">
       <main className="">
         <Nav />
         <Header></Header>
         {/* hero 1 */}
-        <div id="lichkhaigiang" className="scroll-mt-30 bg-[#157EFF] w-[1268px] mx-auto mt-8 p-6 flex gap-3">
-          <div className="flex flex-8 border border-[#FFF9C5]">
+        <div id="lichkhaigiang" className="scroll-mt-30 bg-[#157EFF] w-full max-w-[1268px] mx-auto mt-8 p-6 flex flex-col lg:flex-row  gap-3">
+          <div className="flex flex-col lg:flex-row flex-8 border border-[#FFF9C5]">
             <div className="bg-[#FFF9C5] text-[#004AF7] font-bold">
               <div className="border-b uppercase p-3 text-center">
                 Lớp <br />College Prep
@@ -25,7 +25,7 @@ export default function Home() {
                 1
               </div>
             </div>
-            <div className="text-[#FFF9C5] font-bold text-[16px] flex items-center justify-center mx-auto">
+            <div className="text-[#FFF9C5] font-bold text-[16px] flex items-center justify-center mx-auto px-2 lg:px-0">
               <div>
                 Khai giảng: 30/01/2026<br />
                 Lịch học (16 buổi + 3 seminar): Thứ 4 và Thứ 6 (17:30 - 19:30)<br />
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           <div className="flex-4 border border-[#FFF9C5] p-3">
-            <div className="bg-[#FFF9C5] h-full px-12 py-8">
+            <div className="bg-[#FFF9C5] h-full p-2 lg:px-12 lg:py-8">
               <div className="border border-[#FFC800] p-2 rounded-xl h-full">
                 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeHGVx0m7WBQBXPxPLftIZZD-eHllCb7iBv9dAa3ZhtlFKz2A/viewform" className="block hover:scale-105 duration-300 bg-[#FFC800] h-full rounded-lg flex items-center justify-center font-black text-[36px] uppercase text-[#004AF7]">
                   Đăng Ký Học
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         {/* hero 2 */}
-        <div className="bg-[#FDFFD6] w-[1268px] mx-auto mt-8 p-4 flex gap-3 text-center justify-center items-center text-[#004AF7] font-medium text-[24px]">
+        <div className="bg-[#FDFFD6] w-full max-w-[1268px] mx-auto mt-8 py-2 lg:p-4 flex flex-col lg:flex-row gap-1 lg:gap-3 text-center justify-center items-center text-[#004AF7] font-medium text-xs lg:text-[24px]">
           <div>
             Nếu bạn gặp lỗi trong quá trình đăng ký vui lòng
           </div>
