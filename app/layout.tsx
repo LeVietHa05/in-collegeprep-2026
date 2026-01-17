@@ -8,8 +8,8 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: "Collage Prep",
-  description: "Collage Prep by Inception",
+  title: "College Prep",
+  description: "College Prep by Inception",
 };
 
 export default function RootLayout({

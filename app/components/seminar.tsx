@@ -23,7 +23,7 @@ export default function Seminar({ num, content }: { num: string, content: string
                     </div>
                     <div className="text-center uppercase font-bold text-[#004AF7] py-3">
                         <div className="text-[19px]">CEO INCEPTION</div>
-                        <div>MBA TẠI DUKE UNIVERSITY</div>
+                        <div>THẠC SĨ TẠI DUKE UNIVERSITY</div>
                     </div>
                 </div>
             </div>

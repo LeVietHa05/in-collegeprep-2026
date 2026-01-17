@@ -74,7 +74,7 @@ export default function Home() {
         <Seminar num="2" content={`<div><b>AI Assistant: Hướng dẫn dùng AI một cách có trách nhiệm và không vi phạm đạo đức học thuật</b> </div>
           <div><b>The Reality of AI:</b> Capabilities and Limitations - AI làm được gì và hạn chế ra sao</div>
           <div><b>Academic Integrity 2.0: </b>The "Gray Area" and Plagiarism - Cách dùng AI để tránh bị coi là đạo văn</div>
-          <div><b>Prompt Engineering for Learning (Not Cheating) </b>Nghệ thuật viết câu lệnh AI và các công cụ AI đặc thùcho từng mục đích</div>`} />
+          <div><b>Prompt Engineering for Learning (Not Cheating) </b>Nghệ thuật viết câu lệnh AI và các công cụ AI đặc thù cho từng mục đích</div>`} />
 
         {/* noi dung khoa hoc 3 */}
         <Noidungkhoahoc3 />
